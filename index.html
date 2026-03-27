@@ -3,79 +3,89 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Misree Chai | Premium Cafe</title>
-  <meta name="description" content="Misree Chai is a premium neighborhood cafe with elegant chai, desserts, and a warm cream-and-brown aesthetic." />
+  <title>Misree Chai</title>
+  <meta name="description" content="Misree Chai is a premium neighborhood cafe in Jersey City with chai, bubble tea, mocktails, acai bowls, bakery, crepes, and coffee." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="topbar">
     <div class="container nav">
-      <div class="brand">
-        <div class="brand-mark">MC</div>
+      <a href="#home" class="brand">
+        <img src="assets/logo.png" alt="Misree Chai logo" class="brand-logo" />
         <div>
-          <p class="eyebrow">Premium Cafe</p>
           <h1 class="brand-name">Misree Chai</h1>
         </div>
-      </div>
+      </a>
 
       <nav class="desktop-nav">
         <a href="#about">About</a>
         <a href="#menu">Menu</a>
-        <a href="#gallery">Gallery</a>
         <a href="#visit">Visit</a>
+        <a href="#delivery">Delivery</a>
       </nav>
 
       <div class="nav-actions">
         <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu">☰</button>
-        <a class="btn btn-dark desktop-only" href="#visit">Visit Us</a>
+        <a class="btn btn-dark desktop-only" href="tel:+18562102029">Call Now</a>
       </div>
     </div>
 
     <nav class="mobile-nav" id="mobileNav">
       <a href="#about">About</a>
       <a href="#menu">Menu</a>
-      <a href="#gallery">Gallery</a>
       <a href="#visit">Visit</a>
+      <a href="#delivery">Delivery</a>
+      <a href="tel:+18562102029">Call Now</a>
     </nav>
   </header>
 
-  <main>
+  <main id="home">
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="pill">Crafted for comfort</p>
-          <h2>Premium chai, elegant desserts, and a cafe atmosphere worth lingering in.</h2>
+          <p class="pill">Elegant local favorite</p>
+          <h2>Bubble tea, chai, desserts, and a warm premium cafe experience.</h2>
           <p class="hero-text">
-            Misree Chai blends warmth, presentation, and rich flavor into a refined local cafe experience.
-            Soft cream tones, rich browns, and handcrafted beverages create a space that feels both modern and comforting.
+            Misree Chai brings together soft cream tones, warm brown elegance, handcrafted drinks, and comforting sweets in the heart of Jersey City.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-dark" href="#menu">Explore Menu</a>
-            <a class="btn btn-light" href="#about">Our Story</a>
+            <a class="btn btn-dark" href="#menu">View Menu</a>
+            <a class="btn btn-light" href="#visit">Find Us</a>
+          </div>
+
+          <div class="quick-facts">
+            <div class="fact-card">
+              <span>Location</span>
+              <strong>789 Newark Ave, Jersey City</strong>
+            </div>
+            <div class="fact-card">
+              <span>Phone</span>
+              <strong>(856) 210-2029</strong>
+            </div>
+            <div class="fact-card">
+              <span>Status</span>
+              <strong id="heroStatus">Checking hours...</strong>
+            </div>
           </div>
         </div>
 
         <div class="hero-card">
           <div class="card-badge-row">
-            <span class="badge">Signature Pick</span>
-            <span class="subtle">Chef Favorite</span>
+            <span class="badge">House Favorites</span>
+            <span class="subtle">Freshly made</span>
           </div>
-          <h3>Saffron Milk Chai</h3>
+          <h3>Bubble tea, crepes, acai bowls, and chai</h3>
           <p>
-            Smooth, aromatic, and delicately sweet with a premium cafe presentation that feels luxurious in every sip.
+            A menu built for cravings: fruit teas, milk teas, bakery bites, mocktails, crepes, and classic chai.
           </p>
 
-          <div class="mini-grid">
+
             <div class="mini-box">
-              <span>Ambiance</span>
-              <strong>Elegant & Cozy</strong>
-            </div>
-            <div class="mini-box">
-              <span>Palette</span>
-              <strong>Cream & Brown</strong>
+              <span>Delivery</span>
+              <strong>Grubhub, DoorDash, Uber</strong>
             </div>
           </div>
         </div>
@@ -84,10 +94,10 @@
 
     <section class="highlights">
       <div class="container grid-4">
-        <article class="info-card">Premium tea blends and house spices</article>
-        <article class="info-card">Fresh pastries and dessert pairings</article>
-        <article class="info-card">Warm premium aesthetic with local comfort</article>
-        <article class="info-card">Fast service for dine-in and takeaway guests</article>
+        <article class="info-card">Premium aesthetic with a soft cream-and-brown interior feel.</article>
+        <article class="info-card">Bubble tea, acai bowls, crepes, bakery items, chai, coffee, and mocktails.</article>
+        <article class="info-card">Easy call button, live hours, map integration, and fast local directions.</article>
+        <article class="info-card">Available on Grubhub, DoorDash, and Uber delivery platforms.</article>
       </div>
     </section>
 
@@ -97,19 +107,17 @@
           <p class="section-label">About Misree Chai</p>
           <h3>A neighborhood cafe with a premium soul.</h3>
           <p>
-            Misree Chai is designed around comfort, quality, and visual elegance. We serve handcrafted chai,
-            refined desserts, and cafe favorites in a soft cream-and-brown setting that invites guests to slow down,
-            connect, and enjoy every moment.
+            Misree Chai blends boutique-cafe aesthetics with crowd-pleasing drinks and desserts. The experience is simple: beautiful presentation, rich flavors, a welcoming vibe, and a menu broad enough for tea lovers, dessert lovers, and casual cafe visitors alike.
           </p>
         </div>
 
         <div class="panel dark-panel">
-          <p class="section-label light">Experience</p>
+          <p class="section-label light">What people come for</p>
           <ul class="feature-list">
-            <li>Handcrafted chai recipes with premium ingredients</li>
-            <li>Aesthetic interiors for relaxed meetups and cozy evenings</li>
-            <li>Carefully selected dessert pairings</li>
-            <li>Local neighborhood warmth with elevated presentation</li>
+            <li>Bubble tea in classic, fruit, and kulfi-inspired flavors</li>
+            <li>Acai bowls, mocktails, bakery items, and crepes</li>
+            <li>Comfort drinks like Irani chai, masala chai, and South Indian coffee</li>
+            <li>Warm aesthetic and a polished neighborhood-cafe experience</li>
           </ul>
         </div>
       </div>
@@ -120,101 +128,173 @@
         <div class="section-head">
           <div>
             <p class="section-label">Menu</p>
-            <h3>Signature selections</h3>
+            <h3>Explore the menu</h3>
           </div>
           <p class="section-copy">
-            A curated menu of premium chai, specialty drinks, and dessert pairings designed for a refined cafe experience.
+            Filter through the categories below. Prices could be slightly changed.
           </p>
         </div>
 
         <div class="menu-filter">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="chai">Chai</button>
-          <button class="filter-btn" data-filter="dessert">Desserts</button>
+          <button class="filter-btn active" data-filter="bubble-tea">Bubble Tea</button>
+          <button class="filter-btn" data-filter="crepes">Crepes</button>
+          <button class="filter-btn" data-filter="mocktails">Mocktails</button>
+          <button class="filter-btn" data-filter="acai">Acai Bowls</button>
           <button class="filter-btn" data-filter="bakery">Bakery</button>
+          <button class="filter-btn" data-filter="tea-coffee">Tea & Coffee</button>
+          <button class="filter-btn" data-filter="all">All</button>
         </div>
 
         <div class="menu-grid" id="menuGrid">
-          <article class="menu-card" data-category="chai">
-            <div class="menu-top">
-              <h4>Royal Masala Chai</h4>
-              <span>$4.50</span>
-            </div>
-            <p>Slow-brewed black tea with ginger, cardamom, cinnamon, clove, and creamy milk.</p>
+          <article class="menu-card" data-category="bubble-tea">
+            <div class="menu-top"><h4>Mango Kulfi Milk Tea</h4><span>R $7 / L $8</span></div>
+            <p>Rich kulfi-style mango milk tea.</p>
+          </article>
+          <article class="menu-card" data-category="bubble-tea">
+            <div class="menu-top"><h4>Falooda Kulfi Milk Tea</h4><span>R $7 / L $8</span></div>
+            <p>Falooda-inspired creamy milk tea.</p>
+          </article>
+          <article class="menu-card" data-category="bubble-tea">
+            <div class="menu-top"><h4>Pista Kulfi Milk Tea</h4><span>R $7 / L $8</span></div>
+            <p>Pistachio kulfi flavor with milk tea.</p>
+          </article>
+          <article class="menu-card" data-category="bubble-tea">
+            <div class="menu-top"><h4>Taro Milk Tea</h4><span>R $6 / L $7</span></div>
+            <p>Classic taro bubble tea favorite.</p>
+          </article>
+          <article class="menu-card" data-category="bubble-tea">
+            <div class="menu-top"><h4>Classic Milk Tea</h4><span>R $6 / L $7</span></div>
+            <p>Traditional milk tea with tapioca pearls standard.</p>
+          </article>
+          <article class="menu-card" data-category="bubble-tea">
+            <div class="menu-top"><h4>Strawberry Milk Tea</h4><span>R $6 / L $7</span></div>
+            <p>Sweet and fruity milk tea.</p>
+          </article>
+          <article class="menu-card" data-category="bubble-tea">
+            <div class="menu-top"><h4>Honeydew Milk Tea</h4><span>R $6 / L $7</span></div>
+            <p>Refreshing honeydew-based milk tea.</p>
+          </article>
+          <article class="menu-card" data-category="bubble-tea">
+            <div class="menu-top"><h4>Passion Fruit Tea</h4><span>R $5 / L $6</span></div>
+            <p>Bright fruit tea with a tangy finish.</p>
+          </article>
+          <article class="menu-card" data-category="bubble-tea">
+            <div class="menu-top"><h4>Strawberry Fruit Tea</h4><span>R $5 / L $6</span></div>
+            <p>Fresh strawberry fruit tea.</p>
+          </article>
+          <article class="menu-card" data-category="bubble-tea">
+            <div class="menu-top"><h4>Mango Fruit Tea</h4><span>R $5 / L $6</span></div>
+            <p>Refreshing mango tea for a lighter sip.</p>
+          </article>
+          <article class="menu-card" data-category="bubble-tea">
+            <div class="menu-top"><h4>Peach Fruit Tea</h4><span>R $5 / L $6</span></div>
+            <p>Peachy fruit tea with light sweetness.</p>
+          </article>
+          <article class="menu-card" data-category="bubble-tea">
+            <div class="menu-top"><h4>Extra Toppings</h4><span>+$0.50</span></div>
+            <p>Lychee, strawberry, and mango popping pearls, lychee jelly, strawberry jelly, rainbow jelly, and mango jelly.</p>
           </article>
 
-          <article class="menu-card" data-category="chai">
-            <div class="menu-top">
-              <h4>Saffron Milk Chai</h4>
-              <span>$5.25</span>
-            </div>
-            <p>Aromatic chai infused with saffron and a delicate sweet finish for a luxurious sip.</p>
+          <article class="menu-card" data-category="crepes">
+            <div class="menu-top"><h4>Nutella Crepe</h4><span>$12</span></div>
+            <p>Nutella, strawberry and banana.</p>
+          </article>
+          <article class="menu-card" data-category="crepes">
+            <div class="menu-top"><h4>Fudge Brownie Crepe</h4><span>$12</span></div>
+            <p>Brownies, strawberries, and Nutella.</p>
+          </article>
+          <article class="menu-card" data-category="crepes">
+            <div class="menu-top"><h4>Oreo Crepe</h4><span>$12</span></div>
+            <p>Oreo cookie crumble, Nutella, and banana.</p>
+          </article>
+          <article class="menu-card" data-category="crepes">
+            <div class="menu-top"><h4>Royal Pistachio Crepe</h4><span>$12</span></div>
+            <p>Nutella, pistachio, and banana.</p>
+          </article>
+          <article class="menu-card" data-category="crepes">
+            <div class="menu-top"><h4>Mix Berries Crepe</h4><span>$12</span></div>
+            <p>Nutella, strawberries, raspberries and blueberries.</p>
+          </article>
+          <article class="menu-card" data-category="crepes">
+            <div class="menu-top"><h4>Triple Chocolate Crepe</h4><span>$14</span></div>
+            <p>Kinder Bueno, Ferrero, Nutella, and chocolate chips.</p>
           </article>
 
-          <article class="menu-card" data-category="chai">
-            <div class="menu-top">
-              <h4>Karak Reserve</h4>
-              <span>$4.95</span>
-            </div>
-            <p>Bold and rich with deeper spice notes for guests who enjoy a stronger premium cup.</p>
+          <article class="menu-card" data-category="mocktails">
+            <div class="menu-top"><h4>Passion Fruit Lime</h4><span>$5</span></div>
+            <p>Bright, citrusy, and refreshing.</p>
+          </article>
+          <article class="menu-card" data-category="mocktails">
+            <div class="menu-top"><h4>Blue Raz Sparkler</h4><span>$5</span></div>
+            <p>Blue raspberry sparkling refresher.</p>
+          </article>
+          <article class="menu-card" data-category="mocktails">
+            <div class="menu-top"><h4>Pink Berry</h4><span>$5</span></div>
+            <p>Berry-forward mocktail with a sweet finish.</p>
+          </article>
+          <article class="menu-card" data-category="mocktails">
+            <div class="menu-top"><h4>Lychee Refresher</h4><span>$5</span></div>
+            <p>Lychee flavor with a chilled fruit vibe.</p>
+          </article>
+          <article class="menu-card" data-category="mocktails">
+            <div class="menu-top"><h4>Virgin Mojito</h4><span>$5</span></div>
+            <p>Minty, chilled, and refreshing.</p>
+          </article>
+          <article class="menu-card" data-category="mocktails">
+            <div class="menu-top"><h4>Kiwi Guava Sparkler</h4><span>$5</span></div>
+            <p>Kiwi and guava with fizzy freshness.</p>
+          </article>
+          <article class="menu-card" data-category="mocktails">
+            <div class="menu-top"><h4>Jaljeera Refresher</h4><span>$5</span></div>
+            <p>Spiced savory refresher with a twist.</p>
           </article>
 
-          <article class="menu-card" data-category="dessert">
-            <div class="menu-top">
-              <h4>Lotus Milk Cake</h4>
-              <span>$6.25</span>
-            </div>
-            <p>Soft sponge layered with cream and caramel biscuit topping for a rich dessert finish.</p>
+          <article class="menu-card" data-category="acai">
+            <div class="menu-top"><h4>Nutella Bowl</h4><span>$12</span></div>
+            <p>Acai blended with granola, Nutella, strawberry, and banana.</p>
           </article>
-
-          <article class="menu-card" data-category="dessert">
-            <div class="menu-top">
-              <h4>Rose Pistachio Slice</h4>
-              <span>$5.75</span>
-            </div>
-            <p>Soft cream dessert finished with rose notes and crushed pistachio for a refined bite.</p>
+          <article class="menu-card" data-category="acai">
+            <div class="menu-top"><h4>Almond Lover Bowl</h4><span>$12</span></div>
+            <p>Acai blended with almond granola, strawberry, and blueberry.</p>
+          </article>
+          <article class="menu-card" data-category="acai">
+            <div class="menu-top"><h4>Coconut Honey Bowl</h4><span>$12</span></div>
+            <p>Acai blended with granola, strawberry, blueberry, honey, and coconut.</p>
+          </article>
+          <article class="menu-card" data-category="acai">
+            <div class="menu-top"><h4>Protein Bowl</h4><span>$12</span></div>
+            <p>Acai blended with granola, peanut butter, and banana.</p>
           </article>
 
           <article class="menu-card" data-category="bakery">
-            <div class="menu-top">
-              <h4>Butter Croissant</h4>
-              <span>$3.75</span>
-            </div>
-            <p>Flaky, buttery, and served warm to pair beautifully with chai or coffee.</p>
+            <div class="menu-top"><h4>Butter Croissant</h4><span>$4</span></div>
+            <p>Simple, flaky, buttery croissant.</p>
           </article>
-        </div>
-      </div>
-    </section>
+          <article class="menu-card" data-category="bakery">
+            <div class="menu-top"><h4>Nutella Croissant</h4><span>$5</span></div>
+            <p>Croissant filled with Nutella.</p>
+          </article>
+          <article class="menu-card" data-category="bakery">
+            <div class="menu-top"><h4>Osmania Biscuits 3pc</h4><span>$2</span></div>
+            <p>Classic tea-time biscuit pairing.</p>
+          </article>
+          <article class="menu-card" data-category="bakery">
+            <div class="menu-top"><h4>Bun Maska</h4><span>$3</span></div>
+            <p>Fluffy creamy Bun Maska. Best when combined with chai</p>
+          </article>
 
-    <section id="gallery" class="section">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <p class="section-label">Gallery Feel</p>
-            <h3>The premium aesthetic</h3>
-          </div>
-          <p class="section-copy">
-            A visual identity built around cream tones, rich browns, soft lighting, and elegant presentation.
-          </p>
-        </div>
-
-        <div class="gallery-grid">
-          <div class="gallery-card">
-            <span>Scene 01</span>
-            <p>Artisan chai served in elegant cups with warm creamy textures.</p>
-          </div>
-          <div class="gallery-card">
-            <span>Scene 02</span>
-            <p>Soft cream seating and brown wood accents for a premium local vibe.</p>
-          </div>
-          <div class="gallery-card">
-            <span>Scene 03</span>
-            <p>Fresh pastries and desserts arranged with boutique cafe presentation.</p>
-          </div>
-          <div class="gallery-card">
-            <span>Scene 04</span>
-            <p>Cozy corners designed for conversations, study breaks, and evening comfort.</p>
-          </div>
+          <article class="menu-card" data-category="tea-coffee">
+            <div class="menu-top"><h4>Irani Chai</h4><span>$2.50</span></div>
+            <p>Classic cafe chai served hot.</p>
+          </article>
+          <article class="menu-card" data-category="tea-coffee">
+            <div class="menu-top"><h4>Masala Chai</h4><span>$3.50</span></div>
+            <p>Comforting masala-spiced tea.</p>
+          </article>
+          <article class="menu-card" data-category="tea-coffee">
+            <div class="menu-top"><h4>Coffee</h4><span>$3</span></div>
+            <p>Traditional South Indian-style coffee.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -222,17 +302,17 @@
     <section id="visit" class="section">
       <div class="container visit-grid">
         <div class="panel dark-panel">
-          <p class="section-label light">Visit Us</p>
-          <h3>Your next favorite chai stop.</h3>
+          <p class="section-label light">Visit the cafe</p>
+          <h3>789 Newark Ave, Jersey City, NJ 07306</h3>
 
           <div class="visit-info">
             <div>
               <h4>Hours</h4>
-              <p id="hoursText">Mon – Thu: 8:00 AM – 9:00 PM<br />Fri – Sun: 9:00 AM – 11:00 PM</p>
+              <p>Mon – Thu: 9:00 AM – 10:00 PM<br>Fri – Sun: 9:00 AM – 11:00 PM</p>
             </div>
             <div>
-              <h4>Location</h4>
-              <p>123 Cafe Street<br />Jersey City, NJ</p>
+              <h4>Phone</h4>
+              <p>(856) 210-2029</p>
             </div>
           </div>
 
@@ -242,22 +322,69 @@
           </div>
 
           <div class="hero-actions">
-            <a class="btn btn-light" href="tel:+12012345678">Call Now</a>
-            <a class="btn btn-outline" href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+            <a class="btn btn-light" href="tel:+18562102029">Call the Store</a>
+            <a class="btn btn-outline" target="_blank" rel="noreferrer" href="https://www.google.com/maps/dir/?api=1&destination=Misree+Chai+Jersey+City"">Get Directions</a>
           </div>
         </div>
 
-        <div class="panel light-panel">
-          <p class="section-label">Contact</p>
-          <h3>Send an inquiry</h3>
+        <div class="panel light-panel map-panel">
+          <p class="section-label">Map</p>
+          <h3>Find us easily</h3>
+          <div class="map-wrap">
+            <iframe
+            src="https://www.google.com/maps?q=Misree+Chai+Jersey+City&output=embed"
+            loading="lazy">
+          </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <form id="contactForm" class="contact-form">
-            <input type="text" id="name" placeholder="Your name" required />
-            <input type="email" id="email" placeholder="Email address" required />
-            <textarea id="message" rows="5" placeholder="Tell us about your visit, event, or catering request" required></textarea>
-            <button type="submit" class="btn btn-dark">Send Message</button>
-            <p class="form-note" id="formNote"></p>
-          </form>
+    <section id="delivery" class="section section-soft">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="section-label">Delivery</p>
+            <h3>Order through delivery apps</h3>
+          </div>
+          <p class="section-copy">
+            The cafe is available on Grubhub, DoorDash, and Uber. Update these links later if you get the exact store listing URLs.
+          </p>
+        </div>
+
+        <div class="delivery-grid">
+          <a class="delivery-card" target="_blank" rel="noreferrer" href="https://www.grubhub.com">
+            <h4>Grubhub</h4>
+            <p>Open Grubhub and search for Misree Chai in Jersey City.</p>
+            <span>Open App / Website</span>
+          </a>
+          <a class="delivery-card" target="_blank" rel="noreferrer" href="https://www.doordash.com">
+            <h4>DoorDash</h4>
+            <p>Check live delivery availability for your address.</p>
+            <span>Open App / Website</span>
+          </a>
+          <a class="delivery-card" target="_blank" rel="noreferrer" href="https://www.ubereats.com">
+            <h4>Uber</h4>
+            <p>Order drinks, desserts, and cafe favorites online.</p>
+            <span>Open App / Website</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section">
+      <div class="container">
+        <div class="panel light-panel">
+          <p class="section-label">Quick contact</p>
+          <h3>Need something fast?</h3>
+          <p class="contact-copy">
+            For quick questions, catering inquiries, or order details, the fastest option is to call the store directly.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-dark" href="tel:+18562102029">Call (856) 210-2029</a>
+            <a class="btn btn-light" target="_blank" rel="noreferrer" href="https://www.google.com/maps/search/?api=1&query=Misree+789+Newark+Ave,+Jersey+City,+NJ+07306">Open in Maps</a>
+            <a class="btn btn-light" target="_blank" rel="noreferrer" href="https://www.instagram.com/misreechai/">Instagram</a>
+          </div>
         </div>
       </div>
     </section>
@@ -268,12 +395,13 @@
       <p>© 2026 Misree Chai. Premium cafe experience in every cup.</p>
       <div class="footer-links">
         <a href="#menu">Menu</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#visit">Contact</a>
+        <a href="#visit">Visit</a>
+        <a href="#delivery">Delivery</a>
+        <a href="https://www.instagram.com/misreechai/" class="social">Instagram</a>
       </div>
     </div>
   </footer>
 
-  <script src="/script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

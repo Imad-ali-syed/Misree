@@ -33,34 +33,31 @@ filterButtons.forEach((button) => {
 
 function updateCafeStatus() {
   const statusText = document.getElementById("openStatus");
+  const heroStatus = document.getElementById("heroStatus");
   const statusDot = document.getElementById("statusDot");
-  if (!statusText || !statusDot) return;
+  if (!statusText || !statusDot || !heroStatus) return;
 
   const now = new Date();
-  const day = now.getDay(); // 0 Sunday, 6 Saturday
+  const day = now.getDay(); // 0 Sun, 6 Sat
   const hour = now.getHours();
   const minute = now.getMinutes();
   const current = hour + minute / 60;
 
-  let openHour;
-  let closeHour;
-
-  if (day >= 1 && day <= 4) {
-    openHour = 8;
-    closeHour = 21;
-  } else {
-    openHour = 9;
-    closeHour = 23;
-  }
+  let openHour = 9;
+  let closeHour = day >= 5 || day === 0 ? 23 : 22;
 
   const isOpen = current >= openHour && current < closeHour;
+  const openText = isOpen
+    ? `Open now • Closes at ${formatHour(closeHour)}`
+    : `Closed now • Opens at ${formatHour(openHour)}`;
+
+  statusText.textContent = openText;
+  heroStatus.textContent = isOpen ? "Open now" : "Closed now";
 
   if (isOpen) {
-    statusText.textContent = `Open now • Closes at ${formatHour(closeHour)}`;
     statusDot.classList.add("open");
     statusDot.classList.remove("closed");
   } else {
-    statusText.textContent = `Closed now • Opens at ${formatHour(openHour)}`;
     statusDot.classList.add("closed");
     statusDot.classList.remove("open");
   }
@@ -74,24 +71,3 @@ function formatHour(hour24) {
 }
 
 updateCafeStatus();
-
-const contactForm = document.getElementById("contactForm");
-const formNote = document.getElementById("formNote");
-
-if (contactForm && formNote) {
-  contactForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    const name = document.getElementById("name")?.value.trim();
-    const email = document.getElementById("email")?.value.trim();
-    const message = document.getElementById("message")?.value.trim();
-
-    if (!name || !email || !message) {
-      formNote.textContent = "Please fill out all fields.";
-      return;
-    }
-
-    formNote.textContent = "Thanks — your message has been noted. Connect this form to Formspree or Netlify Forms to receive real emails.";
-    contactForm.reset();
-  });
-}
