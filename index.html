@@ -1,45 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Misree Chai</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Misree Chai | Premium Cafe</title>
+  <meta name="description" content="Misree Chai is a premium neighborhood cafe with elegant chai, desserts, and a warm cream-and-brown aesthetic." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
+  <header class="topbar">
+    <div class="container nav">
+      <div class="brand">
+        <div class="brand-mark">MC</div>
+        <div>
+          <p class="eyebrow">Premium Cafe</p>
+          <h1 class="brand-name">Misree Chai</h1>
+        </div>
+      </div>
 
-    <header>
-        <h1>☕ Misree Chai</h1>
-        <p>Sweet Moments in Every Sip</p>
-    </header>
+      <nav class="desktop-nav">
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#visit">Visit</a>
+      </nav>
 
+      <div class="nav-actions">
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu">☰</button>
+        <a class="btn btn-dark desktop-only" href="#visit">Visit Us</a>
+      </div>
+    </div>
+
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </header>
+
+  <main>
     <section class="hero">
-        <h2>Authentic Indian Chai Experience</h2>
-        <p>Freshly brewed chai with the perfect blend of spices and sweetness.</p>
-        <button>Order Now</button>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="pill">Crafted for comfort</p>
+          <h2>Premium chai, elegant desserts, and a cafe atmosphere worth lingering in.</h2>
+          <p class="hero-text">
+            Misree Chai blends warmth, presentation, and rich flavor into a refined local cafe experience.
+            Soft cream tones, rich browns, and handcrafted beverages create a space that feels both modern and comforting.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-dark" href="#menu">Explore Menu</a>
+            <a class="btn btn-light" href="#about">Our Story</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="card-badge-row">
+            <span class="badge">Signature Pick</span>
+            <span class="subtle">Chef Favorite</span>
+          </div>
+          <h3>Saffron Milk Chai</h3>
+          <p>
+            Smooth, aromatic, and delicately sweet with a premium cafe presentation that feels luxurious in every sip.
+          </p>
+
+          <div class="mini-grid">
+            <div class="mini-box">
+              <span>Ambiance</span>
+              <strong>Elegant & Cozy</strong>
+            </div>
+            <div class="mini-box">
+              <span>Palette</span>
+              <strong>Cream & Brown</strong>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="card">
-        <h2>Our Specialties</h2>
-        <ul>
-            <li>Masala Chai</li>
-            <li>Elaichi (Cardamom) Chai</li>
-            <li>Ginger Chai</li>
-            <li>Classic Milk Tea</li>
-        </ul>
+    <section class="highlights">
+      <div class="container grid-4">
+        <article class="info-card">Premium tea blends and house spices</article>
+        <article class="info-card">Fresh pastries and dessert pairings</article>
+        <article class="info-card">Warm premium aesthetic with local comfort</article>
+        <article class="info-card">Fast service for dine-in and takeaway guests</article>
+      </div>
     </section>
 
-    <section class="card">
-        <h2>Why Misree Chai?</h2>
-        <p>
-            We bring you the warmth of traditional chai with modern taste.
-            Every cup is crafted with care, quality ingredients, and a touch of sweetness.
-        </p>
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div class="panel light-panel">
+          <p class="section-label">About Misree Chai</p>
+          <h3>A neighborhood cafe with a premium soul.</h3>
+          <p>
+            Misree Chai is designed around comfort, quality, and visual elegance. We serve handcrafted chai,
+            refined desserts, and cafe favorites in a soft cream-and-brown setting that invites guests to slow down,
+            connect, and enjoy every moment.
+          </p>
+        </div>
+
+        <div class="panel dark-panel">
+          <p class="section-label light">Experience</p>
+          <ul class="feature-list">
+            <li>Handcrafted chai recipes with premium ingredients</li>
+            <li>Aesthetic interiors for relaxed meetups and cozy evenings</li>
+            <li>Carefully selected dessert pairings</li>
+            <li>Local neighborhood warmth with elevated presentation</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <footer>
-        <p>© 2026 Misree Chai | Brewed with ❤️</p>
-    </footer>
+    <section id="menu" class="section section-soft">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="section-label">Menu</p>
+            <h3>Signature selections</h3>
+          </div>
+          <p class="section-copy">
+            A curated menu of premium chai, specialty drinks, and dessert pairings designed for a refined cafe experience.
+          </p>
+        </div>
 
+        <div class="menu-filter">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="chai">Chai</button>
+          <button class="filter-btn" data-filter="dessert">Desserts</button>
+          <button class="filter-btn" data-filter="bakery">Bakery</button>
+        </div>
+
+        <div class="menu-grid" id="menuGrid">
+          <article class="menu-card" data-category="chai">
+            <div class="menu-top">
+              <h4>Royal Masala Chai</h4>
+              <span>$4.50</span>
+            </div>
+            <p>Slow-brewed black tea with ginger, cardamom, cinnamon, clove, and creamy milk.</p>
+          </article>
+
+          <article class="menu-card" data-category="chai">
+            <div class="menu-top">
+              <h4>Saffron Milk Chai</h4>
+              <span>$5.25</span>
+            </div>
+            <p>Aromatic chai infused with saffron and a delicate sweet finish for a luxurious sip.</p>
+          </article>
+
+          <article class="menu-card" data-category="chai">
+            <div class="menu-top">
+              <h4>Karak Reserve</h4>
+              <span>$4.95</span>
+            </div>
+            <p>Bold and rich with deeper spice notes for guests who enjoy a stronger premium cup.</p>
+          </article>
+
+          <article class="menu-card" data-category="dessert">
+            <div class="menu-top">
+              <h4>Lotus Milk Cake</h4>
+              <span>$6.25</span>
+            </div>
+            <p>Soft sponge layered with cream and caramel biscuit topping for a rich dessert finish.</p>
+          </article>
+
+          <article class="menu-card" data-category="dessert">
+            <div class="menu-top">
+              <h4>Rose Pistachio Slice</h4>
+              <span>$5.75</span>
+            </div>
+            <p>Soft cream dessert finished with rose notes and crushed pistachio for a refined bite.</p>
+          </article>
+
+          <article class="menu-card" data-category="bakery">
+            <div class="menu-top">
+              <h4>Butter Croissant</h4>
+              <span>$3.75</span>
+            </div>
+            <p>Flaky, buttery, and served warm to pair beautifully with chai or coffee.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="section-label">Gallery Feel</p>
+            <h3>The premium aesthetic</h3>
+          </div>
+          <p class="section-copy">
+            A visual identity built around cream tones, rich browns, soft lighting, and elegant presentation.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-card">
+            <span>Scene 01</span>
+            <p>Artisan chai served in elegant cups with warm creamy textures.</p>
+          </div>
+          <div class="gallery-card">
+            <span>Scene 02</span>
+            <p>Soft cream seating and brown wood accents for a premium local vibe.</p>
+          </div>
+          <div class="gallery-card">
+            <span>Scene 03</span>
+            <p>Fresh pastries and desserts arranged with boutique cafe presentation.</p>
+          </div>
+          <div class="gallery-card">
+            <span>Scene 04</span>
+            <p>Cozy corners designed for conversations, study breaks, and evening comfort.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="visit" class="section">
+      <div class="container visit-grid">
+        <div class="panel dark-panel">
+          <p class="section-label light">Visit Us</p>
+          <h3>Your next favorite chai stop.</h3>
+
+          <div class="visit-info">
+            <div>
+              <h4>Hours</h4>
+              <p id="hoursText">Mon – Thu: 8:00 AM – 9:00 PM<br />Fri – Sun: 9:00 AM – 11:00 PM</p>
+            </div>
+            <div>
+              <h4>Location</h4>
+              <p>123 Cafe Street<br />Jersey City, NJ</p>
+            </div>
+          </div>
+
+          <div class="status-box">
+            <span class="status-dot" id="statusDot"></span>
+            <p id="openStatus">Checking cafe status...</p>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-light" href="tel:+12012345678">Call Now</a>
+            <a class="btn btn-outline" href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+          </div>
+        </div>
+
+        <div class="panel light-panel">
+          <p class="section-label">Contact</p>
+          <h3>Send an inquiry</h3>
+
+          <form id="contactForm" class="contact-form">
+            <input type="text" id="name" placeholder="Your name" required />
+            <input type="email" id="email" placeholder="Email address" required />
+            <textarea id="message" rows="5" placeholder="Tell us about your visit, event, or catering request" required></textarea>
+            <button type="submit" class="btn btn-dark">Send Message</button>
+            <p class="form-note" id="formNote"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <p>© 2026 Misree Chai. Premium cafe experience in every cup.</p>
+      <div class="footer-links">
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#visit">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
 </body>
 </html>
