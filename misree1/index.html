@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Misree Chai – Brewing Warmth in JC</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">Misree Chai</div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#visit">Visit</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Warm Chai. Fresh Vibes. Jersey City.</h1>
+      <p>Where community meets culture — sip, savor, and feel at home.</p>
+      <a href="#menu" class="btn-primary">View Our Menu</a>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="section-inner two-column">
+      <div>
+        <h2>Our Story</h2>
+        <p>
+          Nestled on Newark Ave in Jersey City, Misree Chai brings a fresh twist to the classic chai café experience. 
+          We mix vibrant flavors, laid-back style, and open hearts — creating a space where everyone belongs.
+        </p>
+        <p>
+          Whether you're catching up with friends, studying, or just escaping the city-rush, we’ve got the brew for you.
+        </p>
+      </div>
+      <div class="image-placeholder">
+        <!-- Later replace with <img src="images/cafe-interior.jpg" alt="Interior" /> -->
+        <span>Interior Coming Soon</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu" class="section section-alt">
+    <div class="section-inner">
+      <h2 class="center">Signature Menu</h2>
+      <p class="center muted">
+        From bold masalas to iced blends and sweet treats — something to match your mood.
+      </p>
+      <div class="card-grid" id="menu-items">
+        <!-- JS will populate menu items here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Section -->
+  <section id="cart" class="section">
+    <div class="section-inner center">
+      <h2>Your Cart</h2>
+      <ul id="cart-list"></ul>
+      <p id="cart-total">Total: $0.00</p>
+      <button class="btn-primary full-width" onclick="checkout()">Checkout on Uber Eats</button>
+    </div>
+  </section>
+
+  <section id="visit" class="section section-alt">
+    <div class="section-inner center">
+      <h2>Visit Us</h2>
+      <p class="muted">
+        789 Newark Ave, Jersey City, NJ 07306 • Open Daily: 12 PM – 11 PM
+      </p>
+      <div class="map-wrapper">
+        <iframe
+          src="https://www.google.com/maps?q=789+Newark+Ave,+Jersey+City,+NJ+07306&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="section-inner two-column">
+      <div>
+        <h2>Let’s Connect</h2>
+        <p>
+          Have a question, event idea or just want to say hi? Drop us a message below and we’ll respond soon.
+        </p>
+        <p class="muted">
+          You can also DM us on Instagram or stop by the café – we love chatting over chai.
+        </p>
+      </div>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn-primary full-width">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Misree Chai — Brewing community, one cup at a time.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
